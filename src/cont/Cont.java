@@ -60,4 +60,10 @@ public class Cont {
     public double getMonthlyInterestRate() {
         return sold * annualInterestRate / 12;
     }
+
+    public void withdraw(double amount) {
+        if (sold > 0) {
+            sold -= amount;
+        }
+    }
 }

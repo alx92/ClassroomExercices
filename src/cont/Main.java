@@ -23,6 +23,7 @@ public class Main {
         Cont cont = new Cont(123456, 0);
 
         cont.deposit(100000);
+        cont.withdraw(53000);
 
         cont.setAnnualInterestRate(6.3);
 
