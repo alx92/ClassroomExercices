@@ -62,7 +62,7 @@ public class Cont {
     }
 
     public void withdraw(double amount) {
-        if (sold > 0) {
+        if (sold > 0 && sold > amount) {
             sold -= amount;
         }
     }
