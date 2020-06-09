@@ -4,27 +4,27 @@ public class TV {
     private boolean power;
     private int channelNr;
     private int volume;
-    private Channel[] channels = new Channel[channelNr];
+    // private Channel[] channels = new Channel[channelNr];
 
 
-    public  boolean On() {
+    public  boolean on() {
         power = true;
         return power;
     }
 
-    public boolean Off() {
+    public boolean off() {
         power = false;
         return power;
     }
 
     public void changeChannel(int channelNr) {
-        if (power == true) {
+        if (power) {
             this.channelNr = channelNr;
         }
     }
 
     public void nextChannel() {
-        if (power == true) {
+        if (power) {
             channelNr++;
             if (channelNr < 100) {
                 channelNr++;
@@ -34,7 +34,7 @@ public class TV {
     }
 
     public void prevChannel() {
-        if (power == true) {
+        if (power) {
             if (channelNr > 0) {
                 channelNr--;
             }

@@ -19,7 +19,7 @@ public class Main {
     public static void main(String[] args) {
         TV smartTV = new TV();
 
-        smartTV.On();
+        smartTV.on();
 
         smartTV.nextChannel();
 
