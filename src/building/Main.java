@@ -1,7 +1,5 @@
 package building;
 
-import java.util.ArrayList;
-
 public class Main {
 
     public static void main(String[] args) {
@@ -29,23 +27,25 @@ public class Main {
         building.addFloor(floor0);
         building.addFloor(floor1);
 
-        ArrayList<Floor> floors = building.getFloors();
+        //ArrayList<Floor> floors = building.getFloors();
 
-        for (Floor floor : floors) {
-            System.out.println("-----------------------------------");
-            System.out.println("-----------------------------------");
-            System.out.print("et-" + floor.getFloorNr() + ":");
+        building.printB();
 
-            ArrayList<Apartment> apartments = floor.getApartments();
-
-            for (Apartment apartment : apartments) {
-
-                System.out.print("||" + apartment.getApNr() +
-                        ". " + apartment.getFamilyName() + " || ");
-            }
-            System.out.println();
-            System.out.println("-----------------------------------");
-            System.out.println("-----------------------------------");
-        }
+//        for (Floor floor : floors) {
+//            System.out.println("-----------------------------------");
+//            System.out.println("-----------------------------------");
+//            System.out.print("et-" + floor.getFloorNr() + ":");
+//
+//            ArrayList<Apartment> apartments = floor.getApartments();
+//
+//            for (Apartment apartment : apartments) {
+//
+//                System.out.print("||" + apartment.getApNr() +
+//                        ". " + apartment.getFamilyName() + " || ");
+//            }
+//            System.out.println();
+//            System.out.println("-----------------------------------");
+//            System.out.println("-----------------------------------");
+//        }
     }
 }

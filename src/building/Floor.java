@@ -19,15 +19,8 @@ public class Floor {
         return floorNr;
     }
 
-    public void setFloorNr(int floorNr) {
-        this.floorNr = floorNr;
-    }
-
     public ArrayList<Apartment> getApartments() {
         return apartments;
     }
 
-    public void setApartments(ArrayList<Apartment> apartments) {
-        this.apartments = apartments;
-    }
 }
